@@ -1,0 +1,222 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family:sans-serif;
+}
+body {
+	font-family: 'Nunito', sans-serif;
+	background: linear-gradient(rgba(197, 202, 224, 0.5), rgba(192, 168, 168, 0.5));
+	
+}
+
+
+.whole {
+	/*background: linear-gradient(rgba(214, 182, 182, 0.8), rgba(214, 182, 182, 0.8)), url(https://wallpaperaccess.com/full/1358232.jpg);*/
+	height: 110px;
+	width:100%;
+	
+	/*-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;*/
+	position: fixed;
+	background:rgba(43, 40, 40, 0.9);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	z-index: 12;
+	
+}
+header{
+	animation: animate 16s ease-out infinite;
+    height:100vh;
+	width:100%;
+	
+	background-size: cover;
+	background-position: center center;
+
+}
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 40px;
+	
+
+}
+.nav-area li {
+	display: inline-block;
+	font-size: small;
+	
+}
+.nav-area li a {
+	color:darkturquoise;
+	text-decoration: none;
+	padding: 0px 30px;
+	font-family:monospace;
+	font-size: 22px;
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+.logo{
+	padding-left: 45px;
+	padding-right:0;
+	padding-top:10px;
+	filter:invert(22%);
+	
+	
+}
+
+.nav-area li a:hover {
+	background: #fff;
+	color: #333;
+}
+
+.welcome-text {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
+}
+.welcome-text h1 {
+	
+	color:black;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode' Verdana, sans-serif
+}
+.welcome-text h1 span {
+	color:lightseagreen;
+	font-size:40px;
+	
+}
+.welcome-text h3{
+	color:black;
+	font-family: 'Nunito', sans-serif;
+	
+}
+
+/*resposive*/
+
+@media (max-width:600px) 
+{
+	.whole{
+		width: 100%;
+	}
+	
+	
+	.nav-area {
+		float: none;
+		margin-top: 0;
+	}
+	.nav-area li a {
+		padding: 5px;
+		font-size: 11px;
+	}
+	.nav-area {
+		text-align: center;
+	}
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.footer{
+		padding: 15px;
+	}
+	
+}
+.footer {
+	display: flex;
+	flex-flow: row wrap;
+	padding: 50px;
+	
+	background-color: rgb(14, 13, 13);
+    height: 225px;
+
+	}
+	
+.footer > * {
+	flex:   100%;
+	}
+
+h2 {
+	font-weight: 600;
+	font-size: 17px;
+padding-left: 100px;
+	}
+.footer ul
+ {
+		list-style: none;
+		padding-left: 0;
+}
+.footer li {
+	line-height: 2em;
+	}
+	
+.footer a {
+	text-decoration: none;
+	}
+.footer-right{
+	display: flex;
+flex-flow: row wrap;
+}
+
+.box a {
+		color: #999;
+		padding-left: 105px;
+		}
+.footer-bottom {
+			text-align: center;
+			color:#999;
+			padding-top: 18px;
+			padding-bottom: 5px;
+			background-color:rgb(14, 13, 13);
+			
+			
+	
+			}
+.footer-left p {
+				padding-right: 20%;
+				color: #999;
+				}   
+.socials a{
+background: #364a62;
+width: 40px;
+height:40px;
+display:inline-block;
+margin-right: 10px;
+border-radius: 40%;
+}
+.socials a i{
+	color: #e7f2f4;
+	padding: 10px 12px;
+	font-size: 20px;
+}
+@media screen and (min-width: 600px) {
+	.footer-right > *{
+		flex: 1;
+	}
+	.footer-left{
+		flex:1 0px;
+	
+	}
+	.footer-right{
+		flex: 2 0px;
+	}
+}
+@keyframes animate {
+	0%,100%{
+		background-image: url(b4.jpg);
+
+	}
+	25%{
+		background-image: url(b3.jpg);
+		
+	}
+	50%{
+		background-image: url(kids/k15.jpg);
+	}
+	75%{
+		background-image: url(b1.jpg);
+		
+	}
+	
+}

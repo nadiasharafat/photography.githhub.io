@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home page</title>
+   
+    <link rel="stylesheet" href="home.css"> 
+    <link rel="stylesheet" href="gallery.css"> 
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+</head>
+<body >
+   
+    
+    <div class="whole">
+     
+        <div class="logo">
+            <img src= "logoo.jpeg" height="100px "width="170px">
+            <ul class="nav-area">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Gallery.html">Portfolio</a></li>
+                <li><a href="Packages.html">Packages</a></li>
+                
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="Booooknow.php">Booking</a></li>
+                <li><a href="About.html">About</a></li>
+                </ul>
+        </div>
+        
+
+
+</div>
+<header>
+<div class="welcome-text">
+        <h1>
+When I photograph <span>I make LOVE</span></h1><br>
+<h3>____The Premium Photography Experience____</h3><br><br>
+
+    </div>
+
+</header>
+
+<div class="full-img" id="fullImgbox">
+    <img src="photography/c1.JPG" id="fullImg">  
+    <span onclick="closeFullImg()">X</span>
+</div>
+
+<div class= "imgGallery">
+<img src="photography/c1.JPG" onclick="openFullImg(this.src)">
+<img src="photography/c6.jpg" onclick="openFullImg(this.src)">
+<img src="photography/c3.JPG" onclick="openFullImg(this.src)">
+<img src="photography/c4.JPG" onclick="openFullImg(this.src)">
+<img src="photography/c5.JPG" onclick="openFullImg(this.src)">
+
+<img src="kids/K1.JPG" onclick="openFullImg(this.src)">
+<img src="kids/K6.JPG" onclick="openFullImg(this.src)">
+<img src="kids/K3.JPG" onclick="openFullImg(this.src)">
+<img src="kids/K4.JPG" onclick="openFullImg(this.src)">
+<img src="kids/K5.JPG" onclick="openFullImg(this.src)">
+
+<img src="bday/b1.JPG" onclick="openFullImg(this.src)">
+<img src="bday/b2.jpg" onclick="openFullImg(this.src)">
+<img src="bday/b3.JPG" onclick="openFullImg(this.src)">
+<img src="bday/b4.JPG" onclick="openFullImg(this.src)">
+<img src="bday/b5.JPG" onclick="openFullImg(this.src)">
+
+
+</div>
+<script>
+    var fullImgbox=document.getElementById("fullImgbox");
+    var fullImg=document.getElementById("fullImg");
+    function openFullImg(img)
+    {
+        fullImgbox.style.display="flex";
+        fullImg.src=img;
+    }
+    function closeFullImg()
+    {
+        fullImgbox.style.display="none"; 
+    }
+</script>
+
+<footer class= "footer">
+<div class= "footer-left">
+    <h3 style="color: darkturquoise">Sulphites</h3><br><br>
+    <p>Sulphite is one of the leading studios of Pakistan specialized for wedding photography and cinematography</p><br><br>
+    <div class="socials">
+        <a href ="#"><i class="fa fa-facebook"></i></a>
+        <a href ="#"><i class="fa fa-twitter"></i></a>
+        <a href ="#"><i class="fa fa-instagram"></i></a>
+        <a href ="#"><i class="fa fa-youtube"></i> </a>
+    </div>
+
+
+</div>
+<ul class="footer-right">
+<li>
+    <h2 style="color: darkturquoise">Useful Links</h2> 
+    <ul class= "box">
+        <li> <a href="home.html">Home</a></li>
+        <li> <a href="Gallery.html">Portfolio</a></li>
+        <li> <a href="Packages.html">Packages</a></li>
+        <li> <a href="contact.html">Contact Us</a></li>
+        <li> <a href="Booooknow.php">Book now</a></li>
+        <li><a href="About.html">About Us</a></li>
+    </ul>
+</li>
+<li>
+    <h2 style="color: darkturquoise">Address</h2> 
+    <ul class= "box">
+        
+        <li> <a href="#">Block D, Street#5 </a></li>
+        <li> <a href="#">F-6/2, Islamabad</a></li>
+        <li> <a href="#">Pakistan</a></li>
+    </ul>
+</li>
+</ul>
+<div class="footer-bottom">
+<p style="color: darkturquoise"> All rights reserverd by &copy; sulphite2021</p>
+</div>
+</footer>
+</body>
+</html>
